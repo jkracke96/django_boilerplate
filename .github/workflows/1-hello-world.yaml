@@ -1,0 +1,19 @@
+name: 1 - Hello World
+
+on:
+    workflow_dispatch:
+    #schedule:
+    #    - cron: '30 15 * * *' # every at 15:30
+    # push: # git push
+    #    branch:    
+    #        - main
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Hello there
+            run: echo "hello"
+
+
+

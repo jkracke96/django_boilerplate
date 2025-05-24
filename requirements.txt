@@ -1,0 +1,20 @@
+Django>=5.0,<5.1
+gunicorn
+python-decouple
+psycopg[binary]
+dj-database-url
+requests
+whitenoise
+django-allauth[socialaccount]
+django-allauth-ui==0.3.6
+django-widget-tweaks
+slippers
+stripe
+django-cors-headers
+django-storages
+azure-storage-blob
+beautifulsoup4
+PyPDF2
+openai
+weasyprint
+# export DYLD_LIBRARY_PATH="/opt/homebrew/lib" # for MacOS

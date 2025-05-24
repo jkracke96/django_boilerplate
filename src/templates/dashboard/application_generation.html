@@ -1,0 +1,51 @@
+{% extends 'dashboard/base.html' %}
+
+{% block head_title %}Homepage - {{ block.super }}{% endblock head_title %}
+
+{% block content %}
+    <div class="container p-6">
+        <form class="max-w-sm" method="post">
+            {% csrf_token %}
+            <div class="mb-5">
+                <label for="job_url" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link to job posting</label>
+                <input type="url" id="job_url" name="job_url" class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light" required />
+            </div>
+            <button type="submit"
+                class="w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Generate Application
+            </button>
+        </form>
+    </div>
+
+    {% if cvs %}
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Job
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Link
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Created at
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cv in cvs %}
+                        {% include 'dashboard/snippets/generated_cv_table.html' with object=cv %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+{% endblock content %}
