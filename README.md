@@ -11,7 +11,12 @@
     2. Pull and collect static files: `python manage.py vendor_pull`, `python manage.py collectstatic`
     3. Run server: `python manage.py runserver`
 6. To run the GitHub Actions, add these to the Repository secrets: `DJANGO_DEBUG`, `NEON_API_KEY`, `NEON_DATABASE_URL`, `NEON_PROJECT_ID`, `STRIPE_SECRET_KEY`
-
+7. In Railway
+    1. Click on + New to add a new project
+    2. In the project click + Create to create a new service
+    3. Choose the desired Github repo and branch
+    4. After the service is deployed, add the environment variables under Variables
+    5. In the settings, go to networking and generate a new domain with port = 8080
 
 # Known issues
 ## Mac
