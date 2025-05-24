@@ -1,0 +1,34 @@
+# dotenv
+# Django
+BASE_URL="http://localhost:8000"
+DJANGO_DEBUG=True
+DJANGO_SECRET_KEY="your_secret_key"
+DATABASE_URL="your_neon_database_url"
+CONN_MAX_AGE="30"
+
+# Email
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_PORT="587"
+EMAIL_USE_TLS=True
+EMAIL_USE_SSL=False
+EMAIL_HOST_USER="your_gmail_email"
+EMAIL_HOST_PASSWORD="your_gmail_passphrase"
+
+# Stripe
+STRIPE_SECRET_KEY="your_stripe_secret_key"
+
+# Azure Storage
+AZURE_ACCOUNT_NAME=""
+AZURE_ACCOUNT_KEY="vPM4t73AW4GW9IokG7FwFxYy+kMDb0S9kCu+aav4CcEwJ2Lb0eNObIxEdLAfQbC46KAo+ErqU0y9+AStN5lIXw=="
+AZURE_ACCOUNT_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=kibotjobwolf;AccountKey=vPM4t73AW4GW9IokG7FwFxYy+kMDb0S9kCu+aav4CcEwJ2Lb0eNObIxEdLAfQbC46KAo+ErqU0y9+AStN5lIXw==;EndpointSuffix=core.windows.net"
+AZURE_CONTAINER="cv-storage"
+AZURE_GENERATED_CV_CONTAINER="generated-cvs"
+
+# Azure OpenAI Api
+AZURE_OPENAI_API_KEY="12ZZKPXcKsLIjYG3XmDLocSBG7YAS3Grz4pfSSgST62wlW39Ph8DJQQJ99BAACfhMk5XJ3w3AAABACOGpNex"
+AZURE_OPENAI_ENDPOINT="https://ki-bot.openai.azure.com/"
+OPENAI_API_VERSION="2024-08-01-preview"
+OPENAI_MODEL="gpt-4.1-mini"
+
+# LiveKit 
+VOICE_AGENT_URL="https://voice-agent.jobwolf.io"

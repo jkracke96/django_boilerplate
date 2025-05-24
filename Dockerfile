@@ -66,7 +66,7 @@ RUN python manage.py collectstatic --noinput
 # whitenoise -> S3 storage maybe in future
 
 # set the Django default project name
-ARG PROJ_NAME="cfehome"
+ARG PROJ_NAME="your_saas_project"
 
 # create a bash script to run the Django project
 # this script will execute at runtime when
