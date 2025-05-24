@@ -18,17 +18,17 @@ EMAIL_HOST_PASSWORD="your_gmail_passphrase"
 STRIPE_SECRET_KEY="your_stripe_secret_key"
 
 # Azure Storage
-AZURE_ACCOUNT_NAME=""
-AZURE_ACCOUNT_KEY="vPM4t73AW4GW9IokG7FwFxYy+kMDb0S9kCu+aav4CcEwJ2Lb0eNObIxEdLAfQbC46KAo+ErqU0y9+AStN5lIXw=="
-AZURE_ACCOUNT_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=kibotjobwolf;AccountKey=vPM4t73AW4GW9IokG7FwFxYy+kMDb0S9kCu+aav4CcEwJ2Lb0eNObIxEdLAfQbC46KAo+ErqU0y9+AStN5lIXw==;EndpointSuffix=core.windows.net"
-AZURE_CONTAINER="cv-storage"
-AZURE_GENERATED_CV_CONTAINER="generated-cvs"
+AZURE_ACCOUNT_NAME="azure storage account name"
+AZURE_ACCOUNT_KEY="azure storage account key"
+AZURE_ACCOUNT_CONNECTION_STRING="azure storage account connection string"
+AZURE_CONTAINER="container name"
+AZURE_GENERATED_CV_CONTAINER="other container name"
 
 # Azure OpenAI Api
-AZURE_OPENAI_API_KEY="12ZZKPXcKsLIjYG3XmDLocSBG7YAS3Grz4pfSSgST62wlW39Ph8DJQQJ99BAACfhMk5XJ3w3AAABACOGpNex"
-AZURE_OPENAI_ENDPOINT="https://ki-bot.openai.azure.com/"
-OPENAI_API_VERSION="2024-08-01-preview"
-OPENAI_MODEL="gpt-4.1-mini"
+AZURE_OPENAI_API_KEY="azure openai api key"
+AZURE_OPENAI_ENDPOINT="hazure openai endpoint"
+OPENAI_API_VERSION="api version"
+OPENAI_MODEL="model name"
 
 # LiveKit 
-VOICE_AGENT_URL="https://voice-agent.jobwolf.io"
+VOICE_AGENT_URL="voice agent url"
