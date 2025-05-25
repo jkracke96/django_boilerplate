@@ -215,7 +215,7 @@ STATICFILES_DIRS = [
 # local/prod CDN
 STATIC_ROOT = BASE_DIR / 'local-cdn'
 
-# File storage for user uploads
+# AZURE
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_ACCOUNT_NAME = config('AZURE_ACCOUNT_NAME', cast=str, default=None)
 AZURE_ACCOUNT_CONNECTION_STRING = config('AZURE_ACCOUNT_CONNECTION_STRING', cast=str, default=None)
@@ -223,6 +223,8 @@ AZURE_ACCOUNT_KEY = config('AZURE_ACCOUNT_KEY', cast=str, default=None)
 AZURE_CONTAINER = config('AZURE_CONTAINER', cast=str, default=None)
 AZURE_GENERATED_CV_CONTAINER = config('AZURE_GENERATED_CV_CONTAINER', cast=str, default=None)
 CV_UPLOAD_FOLDER = config('CV_UPLOAD_FOLDER', cast=str, default="uploads")
+AZURE_RESOURCE_GROUP = config('AZURE_RESOURCE_GROUP', cast=str, default=None)
+AZURE_LOCATION = config('AZURE_LOCATION', cast=str, default=None)
 
 # Azure OpenAI settings
 AZURE_OPENAI_API_KEY = config('AZURE_OPENAI_API_KEY', cast=str, default=None)

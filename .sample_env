@@ -1,12 +1,12 @@
-# dotenv
-# Django
+#_dotenv
+#_Django
 BASE_URL="http://localhost:8000"
 DJANGO_DEBUG=True
 DJANGO_SECRET_KEY="your_secret_key"
 DATABASE_URL="your_neon_database_url"
 CONN_MAX_AGE="30"
 
-# Email
+#_Email
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT="587"
 EMAIL_USE_TLS=True
@@ -14,21 +14,23 @@ EMAIL_USE_SSL=False
 EMAIL_HOST_USER="your_gmail_email"
 EMAIL_HOST_PASSWORD="your_gmail_passphrase"
 
-# Stripe
+#_Stripe
 STRIPE_SECRET_KEY="your_stripe_secret_key"
 
-# Azure Storage
-AZURE_ACCOUNT_NAME="azure storage account name"
-AZURE_ACCOUNT_KEY="azure storage account key"
-AZURE_ACCOUNT_CONNECTION_STRING="azure storage account connection string"
-AZURE_CONTAINER="container name"
-AZURE_GENERATED_CV_CONTAINER="other container name"
+#_Azure
+AZURE_RESOURCE_GROUP="azure_resource_group_name"
+AZURE_LOCATION="azure_location"
+AZURE_ACCOUNT_NAME="azure_storage_account_name"
+AZURE_ACCOUNT_KEY="azure_storage_account_key"
+AZURE_ACCOUNT_CONNECTION_STRING="azure_storage_account_connection_string"
+AZURE_CONTAINER="container_name"
+AZURE_GENERATED_CV_CONTAINER="other_container_name"
 
-# Azure OpenAI Api
-AZURE_OPENAI_API_KEY="azure openai api key"
-AZURE_OPENAI_ENDPOINT="hazure openai endpoint"
-OPENAI_API_VERSION="api version"
-OPENAI_MODEL="model name"
+#_Azure_OpenAI_Api
+AZURE_OPENAI_API_KEY="azure_openai_api_key"
+AZURE_OPENAI_ENDPOINT="hazure_openai_endpoint"
+OPENAI_API_VERSION="api_version"
+OPENAI_MODEL="model_name"
 
-# LiveKit 
-VOICE_AGENT_URL="voice agent url"
+#_LiveKit_
+VOICE_AGENT_URL="voice_agent_url"

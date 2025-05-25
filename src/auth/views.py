@@ -40,7 +40,6 @@ def register_view(request, *args, **kwargs):
 
 
 def api_user_is_authenticated(request, token=None, *args, **kwargs):
-    print("TOKEN:", token)
     signer = TimestampSigner(settings.SECRET_KEY)
     try:
         status = signer.unsign(token, max_age=240)

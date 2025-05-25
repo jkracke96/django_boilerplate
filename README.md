@@ -17,6 +17,12 @@
     3. Choose the desired Github repo and branch
     4. After the service is deployed, add the environment variables under Variables
     5. In the settings, go to networking and generate a new domain with port = 8080
+8. Azure
+    1. Create Azure account & subscription
+    2. Install the Azure CLI
+    3. Run `az login` to athenticate
+    4. Select a location and add it to the env variable `AZURE_LOCATION` and define a resource group name `AZURE_RESOURCE_GROUP`
+
 
 # Known issues
 ## Mac
