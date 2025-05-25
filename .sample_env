@@ -27,6 +27,7 @@ AZURE_CONTAINER="container_name"
 AZURE_GENERATED_CV_CONTAINER="other_container_name"
 
 #_Azure_OpenAI_Api
+AZURE_OPENAI_NAME="my-azure-openai-service"
 AZURE_OPENAI_API_KEY="azure_openai_api_key"
 AZURE_OPENAI_ENDPOINT="hazure_openai_endpoint"
 OPENAI_API_VERSION="api_version"

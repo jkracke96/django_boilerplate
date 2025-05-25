@@ -227,10 +227,13 @@ AZURE_RESOURCE_GROUP = config('AZURE_RESOURCE_GROUP', cast=str, default=None)
 AZURE_LOCATION = config('AZURE_LOCATION', cast=str, default=None)
 
 # Azure OpenAI settings
+AZURE_OPENAI_NAME = config('AZURE_OPENAI_NAME', cast=str, default=None)
+AZURE_OPENAI_MODEL_DEPLOYMENT_NAME = config('AZURE_OPENAI_MODEL_DEPLOYMENT_NAME', cast=str, default=None)
 AZURE_OPENAI_API_KEY = config('AZURE_OPENAI_API_KEY', cast=str, default=None)
 AZURE_OPENAI_ENDPOINT = config('AZURE_OPENAI_ENDPOINT', cast=str, default=None)
 OPENAI_API_VERSION = config('OPENAI_API_VERSION', cast=str, default=None)
 OPENAI_MODEL = config('OPENAI_MODEL', cast=str, default=None)
+OPENAI_MODEL_VERSION = config('OPENAI_MODEL_VERSION', cast=str, default=None)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
